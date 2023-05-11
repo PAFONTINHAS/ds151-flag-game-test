@@ -46,7 +46,7 @@ A aplicação ainda possui uma tela para exibição do placar de pontuação par
 
 ## Imagens das bandeiras
 
-As imagens das bandeiras podem ser requisitadas pela seguinte API pública: https://countryflagsapi.com/
+As imagens das bandeiras podem ser requisitadas pela seguinte API pública: https://flagsapi.com/
 A URL das imagens é aceita como parâmetro para o componente `Image`, portanto, **não** é necessário realizar requisições HTTP, com o `axios`, por exemplo, para exibir as imagens.
 
 A lista dos países pode ser encontrada no array presente no arquivo `countries.js`.
