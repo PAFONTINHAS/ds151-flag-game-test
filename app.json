@@ -8,7 +8,8 @@
     "scheme": "ds151-flag-game",
     "plugins": [
       "expo-router",
-      "expo-font"
+      "expo-font",
+      "expo-image"
     ],
     "assetBundlePatterns": [
       "**/*"

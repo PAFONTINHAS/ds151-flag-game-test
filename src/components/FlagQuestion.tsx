@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
+import { Image } from 'expo-image';
 
 interface FlagQuestionProps {
   username: string;
@@ -14,9 +15,9 @@ export const FlagQuestion = ({ username, countryCode }: FlagQuestionProps) => {
       <Image
         style={styles.flag}
         source={{
-          uri: `https://flagsapi.com/${countryCode}/shiny/64.png`
+          uri: `https://flagcdn.com/w320/${countryCode.toLowerCase()}.png`
         }}
-        resizeMode="contain"
+        contentMode="contain"
       />
     </View>
   );
