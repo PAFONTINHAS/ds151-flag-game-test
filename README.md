@@ -1,6 +1,14 @@
-# Integrantes
+Tecnologia em Análise e Desenvolvimento de Sistemas
 
-- Nome: AAAA BBBB (GRR12345678)
+Setor de Educação Profissional e Tecnológica - SEPT
+
+Universidade Federal do Paraná - UFPR
+
+---
+
+*DS151 - Desenvolvimento para Dispositivos Móveis*
+
+Prof. Alexander Robert Kutzke
 
 # Avaliação Prática: Flag Game
 
@@ -130,7 +138,7 @@ Se precisar embaralhar as alternativas, você pode usar a biblioteca `underscore
 1. Faça o **fork** do repositório.
 2. Adicione os usuários da dupla (se houver) ao repositório no github;
 3. **Adicione o usuário do professor (alexkutzke) ao repositório no github**;
-4. Adicione as informações dos integrantes no arquivo README;
+4. Adicione as informações dos integrantes no arquivo INTEGRANTES.yml;
 5. Instale as dependências e inicie o expo:
 
 ```bash
