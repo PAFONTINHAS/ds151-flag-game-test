@@ -1,4 +1,21 @@
 {
-  "scores": [],
-  "timedscores": []
+  "scores": [
+    {
+      "name": "Peterson",
+      "score": 3,
+      "id": "caFdToYduUY"
+    },
+    {
+      "name": "Lucas",
+      "score": 1,
+      "id": "4fNyZ8zZZQI"
+    },
+    {
+      "name": "Pedro",
+      "score": 3,
+      "id": "DokxvmqbTgA"
+    }
+  ],
+  "timedScores": [],
+  "$schema": "./node_modules/json-server/schema.json"
 }
