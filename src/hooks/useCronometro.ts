@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export function useCronometro(segundosIniciais, onZero) {
+export function useCronometro(segundosIniciais :number, onZero: () => void) {
   const [tempo, setTempo] = useState(segundosIniciais);
 
   useEffect(() => {

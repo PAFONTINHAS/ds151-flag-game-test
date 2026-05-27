@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, Button} from 'react-native';
 import { useRouter } from 'expo-router';
-
-
+import { useState } from 'react';
+import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 
 const HomeScreen = () => {
   const [username, setUsername] = useState<string>('');
