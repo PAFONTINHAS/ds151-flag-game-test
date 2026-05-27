@@ -42,8 +42,7 @@ O código atual do `src/app/game.tsx` já permite jogar 10 rodadas, mas não sal
 
 ## Telas da aplicação
 
-<img src="./images/01_home.png" width="300px">
-<img src="./images/02_jogo_normal.png" width="300px">
+<img src="./images/01_home.png" width="300px"> <img src="./images/02_jogo_normal.png" width="300px">
 <img src="./images/03_acertou.png" width="300px">
 <img src="./images/04_errou.png" width="300px">
 <img src="./images/05_fim_jogo.png" width="300px">
