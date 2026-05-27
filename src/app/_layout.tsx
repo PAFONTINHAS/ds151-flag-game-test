@@ -25,6 +25,7 @@ export default function Layout() {
           name="placar"
           options={{
             title: 'Placar',
+            headerShown: true
           }}
         />
       </Stack>

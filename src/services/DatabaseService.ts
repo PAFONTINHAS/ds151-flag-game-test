@@ -19,15 +19,18 @@ export class DatabaseService {
         }
     }
 
-    public async getScoreboard(){
+    public async getScoreboard() : Promise<ScoreEntity[]>{
 
         console.log("[SERVICE] pegando scores da rota: ", SCORES_TABLE);
         
         try{
             const {data} = await axios.get(SCORES_TABLE);
             console.log("Scoreboard: ", data); 
+
+            return data as ScoreEntity[];
         }catch(e){
             console.error("Erro ao pegar scoreboard: ", e);
+            return [];
         }
     }
 }
