@@ -2,8 +2,27 @@ import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { DatabaseService } from '../services/DatabaseService';
+import { ScoreEntity } from '../services/domain/ScoreEntity';
 
 type Status = 'hit' | 'miss' | 'end';
+
+
+async function storeScorePoints(name: string, points: number) {
+  
+  console.log("Armazenando pontos do usuário: ", name);
+
+  const databaseService: DatabaseService = new DatabaseService();
+
+  const scoreEntity: ScoreEntity = {
+    'name': name,
+    'score': points
+  }
+
+  await databaseService.storeNewScore(scoreEntity);
+
+  console.log("Pontos armazenados");
+}
 
 interface FeedbackScreenProps {
   status: Status;
@@ -23,6 +42,11 @@ export const FeedbackScreen = ({
   onQuit
 }: FeedbackScreenProps) => {
   if (status === 'end') {
+
+    if(username && points){
+      storeScorePoints(username, points);
+    }
+    
     return (
       <SafeAreaView style={[styles.resultContainer, styles.endContainer]}>
         <Text style={styles.resultText}>Fim de jogo!</Text>
