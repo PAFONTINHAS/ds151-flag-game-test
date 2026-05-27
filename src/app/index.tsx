@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, Button } from 'react-native';
+import { View, Text, StyleSheet, TextInput, Button} from 'react-native';
 import { useRouter } from 'expo-router';
+
+
 
 const HomeScreen = () => {
   const [username, setUsername] = useState<string>('');
@@ -24,6 +26,16 @@ const HomeScreen = () => {
             router.push({
               pathname: '/game',
               params: { username: username }
+            });
+          }}
+        />
+        <Button 
+          title="Ver Placar"
+          color="rgb(48, 56, 48)"
+          onPress={() => {
+            router.push({
+              pathname: '/placar',
+             
             });
           }}
         />
