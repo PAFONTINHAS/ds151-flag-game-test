@@ -1,14 +1,6 @@
-Tecnologia em Análise e Desenvolvimento de Sistemas
+# Integrantes
 
-Setor de Educação Profissional e Tecnológica - SEPT
-
-Universidade Federal do Paraná - UFPR
-
----
-
-*DS151 - Desenvolvimento para Dispositivos Móveis*
-
-Prof. Alexander Robert Kutzke
+- Nome: AAAA BBBB (GRR12345678)
 
 # Avaliação Prática: Flag Game
 
@@ -138,14 +130,15 @@ Se precisar embaralhar as alternativas, você pode usar a biblioteca `underscore
 1. Faça o **fork** do repositório.
 2. Adicione os usuários da dupla (se houver) ao repositório no github;
 3. **Adicione o usuário do professor (alexkutzke) ao repositório no github**;
-4. Instale as dependências e inicie o expo:
+4. Adicione as informações dos integrantes no arquivo README;
+5. Instale as dependências e inicie o expo:
 
 ```bash
 npm ci
 npx expo start -c
 ```
 
-5. Inicie o `json-server` em outro terminal.
+6. Inicie o `json-server` em outro terminal.
 ```bash
 npx json-server --watch db.json --port 3000
 ```
